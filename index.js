@@ -6,7 +6,49 @@ window.saveAs = window.saveAs || window.webkitSaveAs || window.mozSaveAs || wind
 function markdownimage() {
   text = document.querySelector("form div textarea");
   text.focus();
-  text.value = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)\n";
+  text.value = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)";
+}
+
+function markdownlink() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "[Link](https://octodex.github.com/images/yaktocat.png)";
+}
+
+function markdownheader() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "# Header";
+}
+
+function markdownblockquotes() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "> Blockquote";
+}
+
+function markdowntable() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "First Header | Second Header\n------------ | -------------\nContent cell 1 | Content cell 2\nContent column 1 | Content column 2";
+}
+
+function markdowncodeblock() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "```javascript\nfunction test() {\n console.log(\"replace this by your code\");\n}\n```";
+}
+
+function markdownlist() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "1. Item 1\n2. Item 2\n3. Item 3\n   * Item 3a\n   * Item 3b";
+}
+
+function markdownemoji() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = ":tada:";
 }
 
 // Because highlight.js is a bit awkward at times
