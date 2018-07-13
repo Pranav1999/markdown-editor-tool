@@ -3,7 +3,7 @@ navigator.saveBlob = navigator.saveBlob || navigator.msSaveBlob || navigator.moz
 window.saveAs = window.saveAs || window.webkitSaveAs || window.mozSaveAs || window.msSaveAs;
 
 //markdown functions
-function printit() {
+function markdownimage() {
   text = document.querySelector("form div textarea");
   text.focus();
   text.value = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)\n";
