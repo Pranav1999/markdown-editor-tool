@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body id="toplevel">
-    <div id="in"><form><textarea id="code"># New Document</textarea></form></div>
+    <div id="in">
+      <form>
+        <textarea id="code"># New Document</textarea>
+      </form>
+    </div>
     <div id="out" class="markdown-body"></div>
     <div id="menu">
       <span>Save As</span>
@@ -33,6 +37,11 @@
         <span>HTML</span>
       </div>
       <a id="close-menu">&times;</a>
+    </div>
+    <div id="markdowntools">
+      <div id="markdowncontent">
+        <p id="imagebutton" title="Insert Image" class="markdownbutton left" onclick="printit()"><i class="material-icons">image</i></p>
+      </div>
     </div>
     <div id="navbar">
       <div id="navcontent">

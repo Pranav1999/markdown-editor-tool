@@ -2,6 +2,13 @@ var URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
 navigator.saveBlob = navigator.saveBlob || navigator.msSaveBlob || navigator.mozSaveBlob || navigator.webkitSaveBlob;
 window.saveAs = window.saveAs || window.webkitSaveAs || window.mozSaveAs || window.msSaveAs;
 
+//markdown functions
+function printit() {
+  text = document.querySelector("form div textarea");
+  text.focus();
+  text.value = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)\n";
+}
+
 // Because highlight.js is a bit awkward at times
 var languageOverrides = {
     js: 'javascript',
